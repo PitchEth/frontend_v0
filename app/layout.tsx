@@ -2,6 +2,7 @@ import { Montserrat as FontSans } from "next/font/google";
 import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import { getMetadata } from "@/utils/getMetadata";
+import { Toaster } from "sonner";
 
 const fontMontserrat = FontSans({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Toaster richColors />
       </body>
     </html>
   );
