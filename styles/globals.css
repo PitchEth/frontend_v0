@@ -83,8 +83,13 @@ body {
 .loader {
   width: 40px;
   aspect-ratio: 1;
-  color: #B67EFD;
-  background: repeating-conic-gradient(from -47deg, #3f1577 0deg, currentColor 1deg 91deg, #3f1577 94deg 180deg);
+  color: #b67efd;
+  background: repeating-conic-gradient(
+    from -47deg,
+    #3f1577 0deg,
+    currentColor 1deg 91deg,
+    #3f1577 94deg 180deg
+  );
   display: flex;
   animation: l12-0 2s infinite linear;
 }
@@ -105,30 +110,35 @@ body {
 }
 
 @keyframes l12-0 {
-
   0%,
   49.9% {
-    transform: scaleX(1)
+    transform: scaleX(1);
   }
 
   50%,
   100% {
-    transform: scaleX(-1)
+    transform: scaleX(-1);
   }
 }
 
 @keyframes l12 {
-
   0%,
   20% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   80%,
   100% {
-    transform: rotate(-270deg)
+    transform: rotate(-270deg);
   }
 }
 
-
 /* #9218F2, #B67EFD */
+
+#homeHeroBg {
+  background-color: #955ceb;
+  background-image: url("../public/assets/hero-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

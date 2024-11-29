@@ -1,3 +1,4 @@
+import GuestNavBar from "@/components/shared/navBar/GuestNavBar";
 
 export default function GuestLayout({
     children,
@@ -8,6 +9,7 @@ export default function GuestLayout({
     return (
         <section className="w-full">
             {/* header */}
+            <GuestNavBar />
             <main className="w-full">{children}</main>
             {/* footer */}
         </section>
