@@ -22,7 +22,7 @@ const HeroSection = () => {
                                 <button className="w-full md:w-[250px] bg-gray-950 py-3 text-gray-200 rounded-lg font-medium">Join as an event creator</button>
                             </div>
                         </div>
-                        <div className="hidden lg:flex w-[400px] self-end">
+                        <div className="hidden lg:flex 2xl:w-[550px] w-[400px] self-end">
                             <ImageWrapper image={heroImage} alt="heroImage" className="w-full" imgClass="object-contain" width={2200} height={3255} />
                         </div>
                     </Container>

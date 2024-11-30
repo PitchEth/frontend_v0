@@ -1,3 +1,4 @@
+import FeaturedPitches from "@/components/guest/home/FeaturedPitches";
 import GoPitchIt from "@/components/guest/home/GoPitchIt";
 import HeroSection from "@/components/guest/home/HeroSection";
 import HostPitchEvent from "@/components/guest/home/HostPitchEvent";
@@ -8,6 +9,7 @@ export default function Home() {
             <HeroSection />
             <GoPitchIt />
             <HostPitchEvent />
+            <FeaturedPitches />
         </main>
     );
 }

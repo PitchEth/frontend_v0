@@ -8,7 +8,7 @@ export default function GuestLayout({
 }>) {
 
     return (
-        <section className="w-full">
+        <section className="w-full overflow-x-hidden">
             {/* announcement tagline*/}
             <Headline />
             {/* header */}
