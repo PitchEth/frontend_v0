@@ -7,7 +7,7 @@ const Join = () => {
         <>
             <section className="w-full bg-pebgpurple md:py-28 py-20 flex flex-col gap-8 items-center">
                 <div className="flex flex-col gap-4 items-center px-4 md:px-0">
-                    <h3 className="font-semibold text-gray-800 md:text-2xl text-xl">Join thousands of Innovators and Brands</h3>
+                    <h3 className="font-semibold text-center text-gray-800 md:text-3xl text-2xl">Join thousands of Innovators and Brands</h3>
                     <div className="flex -space-x-4 rtl:space-x-reverse">
                         {
                             humanAvatars.map((avatar, i) => (
