@@ -12,6 +12,7 @@ import { MdOutlineArrowOutward } from 'react-icons/md'
 
 const GuestNavBar = () => {
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+    const [navBarTransform, setNavBarTransform] = useState<boolean>(false)
 
     const pathname = usePathname();
 
@@ -23,9 +24,21 @@ const GuestNavBar = () => {
         }
     });
 
+    const listenScrollEvent = () => {
+        const scrollY = window.scrollY;
+        setNavBarTransform(scrollY > 10 ? true : false);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+        return () => {
+            window.removeEventListener("scroll", listenScrollEvent);
+        };
+    }, []);
+
     return (
         <header className='w-full overflow-x-hidden'>
-            <MaxWrapper className='lg:px-24 md:px-10 px-4 fixed top-0 inset-x-0 z-50 bg-transparent'>
+            <MaxWrapper className={`lg:px-24 md:px-10 px-4 fixed inset-x-0 z-50  transition-all duration-300 ease-linear ${navBarTransform ? "top-0 navBarGradient" : "top-8 bg-transparent"}`}>
                 <div className='w-full h-20 flex justify-between items-center'>
                     <Logo image={whiteLogo} href="/" classname="lg:w-[90px] md:w-[80px] w-[70px]" />
 

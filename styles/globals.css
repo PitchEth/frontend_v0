@@ -84,12 +84,10 @@ body {
   width: 40px;
   aspect-ratio: 1;
   color: #b67efd;
-  background: repeating-conic-gradient(
-    from -47deg,
-    #3f1577 0deg,
-    currentColor 1deg 91deg,
-    #3f1577 94deg 180deg
-  );
+  background: repeating-conic-gradient(from -47deg,
+      #3f1577 0deg,
+      currentColor 1deg 91deg,
+      #3f1577 94deg 180deg);
   display: flex;
   animation: l12-0 2s infinite linear;
 }
@@ -110,6 +108,7 @@ body {
 }
 
 @keyframes l12-0 {
+
   0%,
   49.9% {
     transform: scaleX(1);
@@ -122,6 +121,7 @@ body {
 }
 
 @keyframes l12 {
+
   0%,
   20% {
     transform: rotate(0deg);
@@ -141,4 +141,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.navBarGradient {
+  background-image: radial-gradient(circle 500px at center, #5E51F8 0%, #955CEB 100%);
+  transform: rotateX(360deg);
 }
