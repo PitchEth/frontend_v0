@@ -144,13 +144,21 @@ body {
 }
 
 .navBarGradient {
-  background-image: radial-gradient(circle 500px at center, #5E51F8 0%, #955CEB 100%);
+  background-image: radial-gradient(circle 300px at center, #5E51F8 0%, #955CEB 100%);
   transform: rotateX(360deg);
 }
 
 #hostPitchEvent {
   background-color: #955ceb;
   background-image: url("../public/assets/brandpitchevent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#haveAnIdea {
+  background-color: #27154C;
+  background-image: url("../public/assets/HaveAnIdea.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

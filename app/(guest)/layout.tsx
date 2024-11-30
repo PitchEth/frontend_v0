@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import Headline from "@/components/shared/Headline";
 import GuestNavBar from "@/components/shared/navBar/GuestNavBar";
 
@@ -8,13 +9,14 @@ export default function GuestLayout({
 }>) {
 
     return (
-        <section className="w-full">
+        <section className="w-full overflow-x-hidden">
             {/* announcement tagline*/}
             <Headline />
             {/* header */}
             <GuestNavBar />
             <main className="w-full">{children}</main>
             {/* footer */}
+            <Footer />
         </section>
     );
 }

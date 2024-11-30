@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import React, { FC } from 'react'
 
 type ImageWrapperTypes = {
-    image: StaticImageData,
+    image: StaticImageData | any,
     alt: string,
     className: string,
     imgClass?: string
