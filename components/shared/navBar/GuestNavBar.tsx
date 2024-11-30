@@ -45,7 +45,7 @@ const GuestNavBar = () => {
                     <div className='hidden md:flex justify-center items-center gap-7'>
                         {
                             guestNavLinks.map((link, index) => (
-                                <Link key={index} href={link.href} className={`text-gray-200 hover:text-white font-medium text-base ${pathname === link.href && "text-white underline"}`} >{link.label}</Link>
+                                <Link key={index} href={link.href} className={`text-gray-200 hover:text-white font-medium text-base`} >{link.label}</Link>
                             ))
                         }
                     </div>
