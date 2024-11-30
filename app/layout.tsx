@@ -1,12 +1,12 @@
-import { Montserrat as FontSans } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import "../styles/globals.css";
 import { cn } from "@/lib/utils";
 import { getMetadata } from "@/utils/getMetadata";
 import { Toaster } from "sonner";
 
-const fontMontserrat = FontSans({
+const fontInter = FontSans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
 });
 
 export const metadata = getMetadata({
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen antialiased bg-white",
-          fontMontserrat.variable
+          fontInter.variable
         )}
       >
         {children}
