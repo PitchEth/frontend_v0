@@ -1,11 +1,13 @@
 import GoPitchIt from "@/components/guest/home/GoPitchIt";
 import HeroSection from "@/components/guest/home/HeroSection";
+import HostPitchEvent from "@/components/guest/home/HostPitchEvent";
 
 export default function Home() {
     return (
         <main className="w-full flex flex-col overflow-x-hidden">
             <HeroSection />
             <GoPitchIt />
+            <HostPitchEvent />
         </main>
     );
 }
