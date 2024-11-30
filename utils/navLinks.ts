@@ -6,14 +6,14 @@ type GuestNavLinksTypes = {
 export const guestNavLinks: GuestNavLinksTypes[] = [
   {
     label: "Discover",
-    href: "/discover",
+    href: "/",
   },
   {
     label: "Events",
-    href: "/events",
+    href: "/",
   },
   {
     label: "Blog",
-    href: "/blogs",
+    href: "/",
   },
 ];
