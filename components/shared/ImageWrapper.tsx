@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { cn } from '@/lib/utils'
 import Image, { StaticImageData } from 'next/image'
 import React, { FC } from 'react'
