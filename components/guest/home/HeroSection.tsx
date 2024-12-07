@@ -9,7 +9,7 @@ const HeroSection = () => {
             <section className="w-full lg:h-screen md:h-[60vh] h-screen" id="homeHeroBg">
                 <MaxWrapper className="h-full">
                     <Container className="h-full flex items-center lg:px-24 md:px-10 px-4 ">
-                        <div className="flex flex-col md:gap-4 gap-3 md:justify-center justify-end flex-1 h-full pb-28 md:pb-0">
+                        <div className="flex flex-col md:gap-4 gap-3 justify-center  flex-1 h-full ">
                             <h1 className="text-white">
                                 <span className="lg:text-[5.5rem]/none text-[3rem]/none font-extrabold">Pitch, Partner</span> <br />
                                 <span className="lg:text-4xl md:text-3xl text-2xl font-bold">and bring your vision to life.</span>
